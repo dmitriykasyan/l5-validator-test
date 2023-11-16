@@ -8,11 +8,6 @@ export default class ArraySchema {
 
   length(num) {
     const validator = (value) => (value !== null ? value.length === num : false);
-    // {
-    //   if (value !== null) {
-    //     return value.length === num
-    //   } return false;
-    // };
     this.validators.push(validator);
     return this;
   }
